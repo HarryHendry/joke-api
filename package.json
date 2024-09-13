@@ -1,0 +1,15 @@
+{
+  "name": "joke-app",
+  "version": "1.0.0",
+  "description": "A personalized joke app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Joke</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Get a Joke Based on Your Name</h1>
+        <form action="/joke" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <button type="submit">Get Joke</button>
+        </form>
+
+        <% if (joke) { %>
+            <div class="joke-box">
+                <h2>Here's a joke for <%= name %>:</h2>
+                <p><%= joke %></p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
